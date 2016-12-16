@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>High Scores</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+      </header>
+      <nav>
+      </nav>
+      <div id="content">
+        <h1>Scoreboard:</h1>
+        <h4>How well did you do?</h4><br>
+        <table align="center">
+          <tr>
+            <th>Name</th>
+            <th>      </th>
+            <th>Score</th>
+          </tr>
+        <% scores.forEach(function(scores) { %>
+          <tr>
+            <td><%= scores.name %></td>
+            <td></td>
+            <td><%= scores.score %></td>
+          </tr>
+        <% }); %>
+        </table>
+        <br><br>
+        <a class="button" href="/">Home</a><br><br>
+        <img src="images/group.jpg" width="600">
+      </div>
+      <footer class="footer">
+      </footer>
+    </div>
+  </body>
+</html>
